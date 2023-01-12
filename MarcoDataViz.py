@@ -7,7 +7,6 @@ from pandas.api.types import (
     is_categorical_dtype,
     is_datetime64_any_dtype,
     is_numeric_dtype,
-    is_object_dtype,
 )
 import altair as alt
 
@@ -27,7 +26,8 @@ if 'dataset_name' not in state:
 @st.experimental_memo
 def get_providers():
     limts_providers = {"limit": "1000", "offset": "0"}
-    request_providers = requests.get("https://api.db.nomics.world/v22/providers", params=limts_providers)
+    request_providers = requests.get("https://api.db.nomics.world/v22/providers", 
+                                     params=limts_providers)
     json_providers = json.loads(request_providers.text)
     providers = json_providers["providers"]["docs"]
     return [(provider["code"], provider["name"]) for provider in providers]
@@ -47,16 +47,20 @@ def change_provider(selected_provider_name, selected_provider_code):
     state['provider_name'] = selected_provider_name
     state['provider_code'] = selected_provider_code
 
-st.button("**Load datasets**", on_click=change_provider, args=(selected_provider_name, selected_provider_code,))
+st.button("**Load datasets**", on_click=change_provider, 
+          args=(selected_provider_name, selected_provider_code,))
 
 @st.experimental_memo
 def get_datasets(provider_code):
     limts_datasets = {"limit": "500", "offset": "0"}
-    request_datasets = requests.get(f"https://api.db.nomics.world/v22/datasets/{provider_code}", params=limts_datasets)
+    request_datasets = requests.get(
+        f"https://api.db.nomics.world/v22/datasets/{provider_code}",
+        params=limts_datasets)
     json_datasets = json.loads(request_datasets.text)
     datasets = json_datasets["datasets"]["docs"]
     datasets_number = json_datasets["datasets"]["num_found"]
-    dataset_details = [(dataset["code"], dataset["name"], dataset["nb_series"], dataset["nb_series"]) for dataset in datasets]
+    dataset_details = [(dataset["code"], dataset["name"], dataset["nb_series"], 
+                       dataset["nb_series"]) for dataset in datasets]
     return dataset_details, datasets_number
 
 if state['provider_code'] == selected_provider_code:
@@ -67,13 +71,19 @@ if "dataset_details" not in globals():
    selected_dataset_name = None
    selected_dataset_code = None
 else:
-    st.info(f"**Provider:** {state['provider_name']}    **Datasets:** {datasets_number} **Link:** [DBNomics Provider Info](https://db.nomics.world/{state['provider_code']})", icon="ℹ️")
+    st.info(f"**Provider:** {state['provider_name']}"
+            f"**Datasets:** {datasets_number}"
+            f"**Link:** [DBNomics Provider Info]"
+            f"(https://db.nomics.world/{state['provider_code']})"
+            , icon="ℹ️")
     if datasets_number > 50:
-        st.warning(f"This alpha version can only show the first 50 datasets of each provider. {state['provider_name']} has {datasets_number} datasets.")
+        st.warning(f"This alpha version can only show the first 50 datasets "
+                   f"of each provider. {state['provider_name']} "
+                   f"has {datasets_number} datasets.")
 
 selected_dataset_name = st.selectbox(
-    f"Select a **dataset**",
-    [j for i, j, k, l in dataset_details])
+    "Select a **dataset**",
+    [j for i, j, k, o in dataset_details])
 
 for item in dataset_details:
     if item[1] == selected_dataset_name:
@@ -83,9 +93,16 @@ for item in dataset_details:
         break
 
 if dataset_details != []:
-    st.info(f"**Dataset Code:** {selected_dataset_code}    **Series in Dataset:** {selected_dataset_series} **Last update:** {selected_dataset_updated} **Link:** [DBNomics Dataset Info](https://db.nomics.world/{state['provider_code']}/{selected_dataset_code})", icon="ℹ️")
+    st.info(f"**Dataset Code:** {selected_dataset_code} "
+            f"**Series in Dataset:** {selected_dataset_series} "
+            f"**Last update:** {selected_dataset_updated} "
+            f"**Link:** [DBNomics Dataset Info]('https://db.nomics.world/"
+            f"{state['provider_code']}/"
+            f"{selected_dataset_code}')", 
+            icon="ℹ️")
     if selected_dataset_series > 2000:
-        st.warning(f"This dataset has more than 2000 series. Loading can take some time and might not be successful.")
+        st.warning("This dataset has more than 2000 series."
+                   " Loading can take some time and might not be successful.")
 
 
 @st.experimental_memo
@@ -173,7 +190,10 @@ def change_dataset(selected_dataset_name, selected_dataset_code):
     state['dataset_name'] = selected_dataset_name
     state['dataset_code'] = selected_dataset_code
 
-st.button("**Load data**", on_click=change_dataset, args=(selected_dataset_name, selected_dataset_code,))   
+st.button("**Load data**",
+    on_click=change_dataset,
+    args=(selected_dataset_name,
+    selected_dataset_code,))   
 
 if state['dataset_code'] != "":
     data = get_data(state['provider_code'], state['dataset_code'])
