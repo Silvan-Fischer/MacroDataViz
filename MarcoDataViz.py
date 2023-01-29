@@ -8,10 +8,10 @@ from pandas.api.types import (
     is_datetime64_any_dtype,
     is_numeric_dtype,
 )
+
 import altair as alt
 
-st.set_page_config(layout="wide")
-st.title("DB Nomics Marco Data Vizualizer")
+st.set_page_config(page_title="DB Nomics Marco Data Vizualizer", layout="wide")
 
 state = st.session_state
 if 'provider_code' not in state:

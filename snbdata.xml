@@ -1,0 +1,1664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:cb="http://www.cbwiki.net/wiki/index.php/Specification_1.2/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" version="2.0">
+  <channel>
+    <atom:link href="http://www.snb.ch/selector/de/mmr/intfeed/rss" rel="self" type="application/rss+xml" />
+    <title>Zinssätze</title>
+    <link>https://www.snb.ch/de/ifor/media/id/media_rss</link>
+    <description>Schweizerische Nationalbank (SNB): CHF-Zinssätze am Tagesende</description>
+    <dc:publisher>SNB</dc:publisher>
+    <dc:date>2023-01-27T18:14:03Z</dc:date>
+    <dc:rights>Copyright © Schweizerische Nationalbank, Zürich (Schweiz) 2023</dc:rights>
+    <dcterms:created>2023-01-27T18:14:03Z</dcterms:created>
+    <dcterms:license>https://www.snb.ch/de/srv/id/disclaimer</dcterms:license>
+    <item>
+      <title>CH: 1.055 R10 2023-01-19 SNB Rendite Bundesobligationen Eidgenossenschaft</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Rendite Bundesobligationen Eidgenossenschaft / Kassazinssatz bei einer Laufzeit von 10 Jahren (2023-01-20T12:05:30+01:00)</description>
+      <pubDate>Fri, 20 Jan 2023 11:05:30 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#R10_1.055_2023-01-19</guid>
+      <dc:date>2023-01-20T11:05:30Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>1.055</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>3</cb:decimals>
+          </cb:observation>
+          <cb:rateName>R10</cb:rateName>
+          <cb:rateType>Rendite Bundesobligationen Eidgenossenschaft / Kassazinssatz bei einer Laufzeit von 10 Jahren</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-19</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 1.5 LSFF 2023-01-19 SNB Sondersatz (Engpassfinanzierungsfazilität)</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Sondersatz (Engpassfinanzierungsfazilität) / gültig bis 12:00 Uhr des darauffolgenden Bankwerktages (2023-01-20T12:05:30+01:00)</description>
+      <pubDate>Fri, 20 Jan 2023 11:05:30 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#LSFF_1.5_2023-01-19</guid>
+      <dc:date>2023-01-20T11:05:30Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>1.5</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>2</cb:decimals>
+          </cb:observation>
+          <cb:rateName>LSFF</cb:rateName>
+          <cb:rateType>Sondersatz (Engpassfinanzierungsfazilität) / gültig bis 12:00 Uhr des darauffolgenden Bankwerktages</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-19</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 0.94 SARH 2023-01-19 SNB SARON</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>SARON / Fixing Handelsschluss (2023-01-20T12:05:30+01:00)</description>
+      <pubDate>Fri, 20 Jan 2023 11:05:30 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#SARH_0.94_2023-01-19</guid>
+      <dc:date>2023-01-20T11:05:30Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>0.94</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>2</cb:decimals>
+          </cb:observation>
+          <cb:rateName>SARH</cb:rateName>
+          <cb:rateType>SARON / Fixing Handelsschluss</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-19</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 1 SNBLZ 2023-01-19 SNB SNB-Leitzins</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>SNB-Leitzins / gültig ab 16.12.2022 (2023-01-20T12:05:30+01:00)</description>
+      <pubDate>Fri, 20 Jan 2023 11:05:30 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#SNBLZ_1_2023-01-19</guid>
+      <dc:date>2023-01-20T11:05:30Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>1</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>2</cb:decimals>
+          </cb:observation>
+          <cb:rateName>SNBLZ</cb:rateName>
+          <cb:rateType>SNB-Leitzins / gültig ab 16.12.2022</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-19</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 28 SNBFBF 2023-01-19 SNB Faktor für die Limite</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Faktor für die Limite / gültig ab 16.12.2022 (2023-01-20T12:05:30+01:00)</description>
+      <pubDate>Fri, 20 Jan 2023 11:05:30 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#SNBFBF_28_2023-01-19</guid>
+      <dc:date>2023-01-20T11:05:30Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>28</cb:value>
+            <cb:unit>factor</cb:unit>
+            <cb:decimals>0</cb:decimals>
+          </cb:observation>
+          <cb:rateName>SNBFBF</cb:rateName>
+          <cb:rateType>Faktor für die Limite / gültig ab 16.12.2022</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-19</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 1 SNBGIRO1 2023-01-19 SNB Zinssatz auf Sichtguthaben bis zur Limite</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Zinssatz auf Sichtguthaben bis zur Limite / gültig ab 16.12.2022 (2023-01-20T12:05:30+01:00)</description>
+      <pubDate>Fri, 20 Jan 2023 11:05:30 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#SNBGIRO1_1_2023-01-19</guid>
+      <dc:date>2023-01-20T11:05:30Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>1</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>2</cb:decimals>
+          </cb:observation>
+          <cb:rateName>SNBGIRO1</cb:rateName>
+          <cb:rateType>Zinssatz auf Sichtguthaben bis zur Limite / gültig ab 16.12.2022</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-19</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 0.5 SNBGIRO2 2023-01-19 SNB Zinssatz auf Sichtguthaben über der Limite</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Zinssatz auf Sichtguthaben über der Limite / gültig ab 16.12.2022 (2023-01-20T12:05:30+01:00)</description>
+      <pubDate>Fri, 20 Jan 2023 11:05:30 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#SNBGIRO2_0.5_2023-01-19</guid>
+      <dc:date>2023-01-20T11:05:30Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>0.5</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>2</cb:decimals>
+          </cb:observation>
+          <cb:rateName>SNBGIRO2</cb:rateName>
+          <cb:rateType>Zinssatz auf Sichtguthaben über der Limite / gültig ab 16.12.2022</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-19</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 50 Discount 2023-01-19 SNB Zinsabschlag in Basispunkten</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Zinsabschlag in Basispunkten / basis point (2023-01-20T12:05:30+01:00)</description>
+      <pubDate>Fri, 20 Jan 2023 11:05:30 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#Discount_50_2023-01-19</guid>
+      <dc:date>2023-01-20T11:05:30Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>50</cb:value>
+            <cb:unit>basis point</cb:unit>
+            <cb:decimals>0</cb:decimals>
+          </cb:observation>
+          <cb:rateName>Discount</cb:rateName>
+          <cb:rateType>Zinsabschlag in Basispunkten / basis point</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-19</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 1.139 R10 2023-01-20 SNB Rendite Bundesobligationen Eidgenossenschaft</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Rendite Bundesobligationen Eidgenossenschaft / Kassazinssatz bei einer Laufzeit von 10 Jahren (2023-01-23T12:04:02+01:00)</description>
+      <pubDate>Mon, 23 Jan 2023 11:04:02 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#R10_1.139_2023-01-20</guid>
+      <dc:date>2023-01-23T11:04:02Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>1.139</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>3</cb:decimals>
+          </cb:observation>
+          <cb:rateName>R10</cb:rateName>
+          <cb:rateType>Rendite Bundesobligationen Eidgenossenschaft / Kassazinssatz bei einer Laufzeit von 10 Jahren</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-20</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 1.5 LSFF 2023-01-20 SNB Sondersatz (Engpassfinanzierungsfazilität)</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Sondersatz (Engpassfinanzierungsfazilität) / gültig bis 12:00 Uhr des darauffolgenden Bankwerktages (2023-01-23T12:04:02+01:00)</description>
+      <pubDate>Mon, 23 Jan 2023 11:04:02 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#LSFF_1.5_2023-01-20</guid>
+      <dc:date>2023-01-23T11:04:02Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>1.5</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>2</cb:decimals>
+          </cb:observation>
+          <cb:rateName>LSFF</cb:rateName>
+          <cb:rateType>Sondersatz (Engpassfinanzierungsfazilität) / gültig bis 12:00 Uhr des darauffolgenden Bankwerktages</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-20</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 0.94 SARH 2023-01-20 SNB SARON</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>SARON / Fixing Handelsschluss (2023-01-23T12:04:02+01:00)</description>
+      <pubDate>Mon, 23 Jan 2023 11:04:02 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#SARH_0.94_2023-01-20</guid>
+      <dc:date>2023-01-23T11:04:02Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>0.94</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>2</cb:decimals>
+          </cb:observation>
+          <cb:rateName>SARH</cb:rateName>
+          <cb:rateType>SARON / Fixing Handelsschluss</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-20</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 1 SNBLZ 2023-01-20 SNB SNB-Leitzins</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>SNB-Leitzins / gültig ab 16.12.2022 (2023-01-23T12:04:02+01:00)</description>
+      <pubDate>Mon, 23 Jan 2023 11:04:02 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#SNBLZ_1_2023-01-20</guid>
+      <dc:date>2023-01-23T11:04:02Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>1</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>2</cb:decimals>
+          </cb:observation>
+          <cb:rateName>SNBLZ</cb:rateName>
+          <cb:rateType>SNB-Leitzins / gültig ab 16.12.2022</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-20</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 28 SNBFBF 2023-01-20 SNB Faktor für die Limite</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Faktor für die Limite / gültig ab 16.12.2022 (2023-01-23T12:04:02+01:00)</description>
+      <pubDate>Mon, 23 Jan 2023 11:04:02 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#SNBFBF_28_2023-01-20</guid>
+      <dc:date>2023-01-23T11:04:02Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>28</cb:value>
+            <cb:unit>factor</cb:unit>
+            <cb:decimals>0</cb:decimals>
+          </cb:observation>
+          <cb:rateName>SNBFBF</cb:rateName>
+          <cb:rateType>Faktor für die Limite / gültig ab 16.12.2022</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-20</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 1 SNBGIRO1 2023-01-20 SNB Zinssatz auf Sichtguthaben bis zur Limite</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Zinssatz auf Sichtguthaben bis zur Limite / gültig ab 16.12.2022 (2023-01-23T12:04:02+01:00)</description>
+      <pubDate>Mon, 23 Jan 2023 11:04:02 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#SNBGIRO1_1_2023-01-20</guid>
+      <dc:date>2023-01-23T11:04:02Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>1</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>2</cb:decimals>
+          </cb:observation>
+          <cb:rateName>SNBGIRO1</cb:rateName>
+          <cb:rateType>Zinssatz auf Sichtguthaben bis zur Limite / gültig ab 16.12.2022</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-20</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 0.5 SNBGIRO2 2023-01-20 SNB Zinssatz auf Sichtguthaben über der Limite</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Zinssatz auf Sichtguthaben über der Limite / gültig ab 16.12.2022 (2023-01-23T12:04:02+01:00)</description>
+      <pubDate>Mon, 23 Jan 2023 11:04:02 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#SNBGIRO2_0.5_2023-01-20</guid>
+      <dc:date>2023-01-23T11:04:02Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>0.5</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>2</cb:decimals>
+          </cb:observation>
+          <cb:rateName>SNBGIRO2</cb:rateName>
+          <cb:rateType>Zinssatz auf Sichtguthaben über der Limite / gültig ab 16.12.2022</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-20</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 50 Discount 2023-01-20 SNB Zinsabschlag in Basispunkten</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Zinsabschlag in Basispunkten / basis point (2023-01-23T12:04:02+01:00)</description>
+      <pubDate>Mon, 23 Jan 2023 11:04:02 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#Discount_50_2023-01-20</guid>
+      <dc:date>2023-01-23T11:04:02Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>50</cb:value>
+            <cb:unit>basis point</cb:unit>
+            <cb:decimals>0</cb:decimals>
+          </cb:observation>
+          <cb:rateName>Discount</cb:rateName>
+          <cb:rateType>Zinsabschlag in Basispunkten / basis point</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-20</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 1.188 R10 2023-01-23 SNB Rendite Bundesobligationen Eidgenossenschaft</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Rendite Bundesobligationen Eidgenossenschaft / Kassazinssatz bei einer Laufzeit von 10 Jahren (2023-01-24T11:59:59+01:00)</description>
+      <pubDate>Tue, 24 Jan 2023 10:59:59 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#R10_1.188_2023-01-23</guid>
+      <dc:date>2023-01-24T10:59:59Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>1.188</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>3</cb:decimals>
+          </cb:observation>
+          <cb:rateName>R10</cb:rateName>
+          <cb:rateType>Rendite Bundesobligationen Eidgenossenschaft / Kassazinssatz bei einer Laufzeit von 10 Jahren</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-23</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 1.5 LSFF 2023-01-23 SNB Sondersatz (Engpassfinanzierungsfazilität)</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Sondersatz (Engpassfinanzierungsfazilität) / gültig bis 12:00 Uhr des darauffolgenden Bankwerktages (2023-01-24T11:59:59+01:00)</description>
+      <pubDate>Tue, 24 Jan 2023 10:59:59 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#LSFF_1.5_2023-01-23</guid>
+      <dc:date>2023-01-24T10:59:59Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>1.5</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>2</cb:decimals>
+          </cb:observation>
+          <cb:rateName>LSFF</cb:rateName>
+          <cb:rateType>Sondersatz (Engpassfinanzierungsfazilität) / gültig bis 12:00 Uhr des darauffolgenden Bankwerktages</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-23</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 0.94 SARH 2023-01-23 SNB SARON</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>SARON / Fixing Handelsschluss (2023-01-24T11:59:59+01:00)</description>
+      <pubDate>Tue, 24 Jan 2023 10:59:59 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#SARH_0.94_2023-01-23</guid>
+      <dc:date>2023-01-24T10:59:59Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>0.94</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>2</cb:decimals>
+          </cb:observation>
+          <cb:rateName>SARH</cb:rateName>
+          <cb:rateType>SARON / Fixing Handelsschluss</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-23</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 1 SNBLZ 2023-01-23 SNB SNB-Leitzins</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>SNB-Leitzins / gültig ab 16.12.2022 (2023-01-24T11:59:59+01:00)</description>
+      <pubDate>Tue, 24 Jan 2023 10:59:59 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#SNBLZ_1_2023-01-23</guid>
+      <dc:date>2023-01-24T10:59:59Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>1</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>2</cb:decimals>
+          </cb:observation>
+          <cb:rateName>SNBLZ</cb:rateName>
+          <cb:rateType>SNB-Leitzins / gültig ab 16.12.2022</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-23</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 28 SNBFBF 2023-01-23 SNB Faktor für die Limite</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Faktor für die Limite / gültig ab 16.12.2022 (2023-01-24T11:59:59+01:00)</description>
+      <pubDate>Tue, 24 Jan 2023 10:59:59 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#SNBFBF_28_2023-01-23</guid>
+      <dc:date>2023-01-24T10:59:59Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>28</cb:value>
+            <cb:unit>factor</cb:unit>
+            <cb:decimals>0</cb:decimals>
+          </cb:observation>
+          <cb:rateName>SNBFBF</cb:rateName>
+          <cb:rateType>Faktor für die Limite / gültig ab 16.12.2022</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-23</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 1 SNBGIRO1 2023-01-23 SNB Zinssatz auf Sichtguthaben bis zur Limite</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Zinssatz auf Sichtguthaben bis zur Limite / gültig ab 16.12.2022 (2023-01-24T11:59:59+01:00)</description>
+      <pubDate>Tue, 24 Jan 2023 10:59:59 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#SNBGIRO1_1_2023-01-23</guid>
+      <dc:date>2023-01-24T10:59:59Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>1</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>2</cb:decimals>
+          </cb:observation>
+          <cb:rateName>SNBGIRO1</cb:rateName>
+          <cb:rateType>Zinssatz auf Sichtguthaben bis zur Limite / gültig ab 16.12.2022</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-23</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 0.5 SNBGIRO2 2023-01-23 SNB Zinssatz auf Sichtguthaben über der Limite</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Zinssatz auf Sichtguthaben über der Limite / gültig ab 16.12.2022 (2023-01-24T11:59:59+01:00)</description>
+      <pubDate>Tue, 24 Jan 2023 10:59:59 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#SNBGIRO2_0.5_2023-01-23</guid>
+      <dc:date>2023-01-24T10:59:59Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>0.5</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>2</cb:decimals>
+          </cb:observation>
+          <cb:rateName>SNBGIRO2</cb:rateName>
+          <cb:rateType>Zinssatz auf Sichtguthaben über der Limite / gültig ab 16.12.2022</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-23</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 50 Discount 2023-01-23 SNB Zinsabschlag in Basispunkten</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Zinsabschlag in Basispunkten / basis point (2023-01-24T11:59:59+01:00)</description>
+      <pubDate>Tue, 24 Jan 2023 10:59:59 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#Discount_50_2023-01-23</guid>
+      <dc:date>2023-01-24T10:59:59Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>50</cb:value>
+            <cb:unit>basis point</cb:unit>
+            <cb:decimals>0</cb:decimals>
+          </cb:observation>
+          <cb:rateName>Discount</cb:rateName>
+          <cb:rateType>Zinsabschlag in Basispunkten / basis point</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-23</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 1.225 R10 2023-01-24 SNB Rendite Bundesobligationen Eidgenossenschaft</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Rendite Bundesobligationen Eidgenossenschaft / Kassazinssatz bei einer Laufzeit von 10 Jahren (2023-01-25T12:00:37+01:00)</description>
+      <pubDate>Wed, 25 Jan 2023 11:00:37 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#R10_1.225_2023-01-24</guid>
+      <dc:date>2023-01-25T11:00:37Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>1.225</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>3</cb:decimals>
+          </cb:observation>
+          <cb:rateName>R10</cb:rateName>
+          <cb:rateType>Rendite Bundesobligationen Eidgenossenschaft / Kassazinssatz bei einer Laufzeit von 10 Jahren</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-24</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 1.5 LSFF 2023-01-24 SNB Sondersatz (Engpassfinanzierungsfazilität)</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Sondersatz (Engpassfinanzierungsfazilität) / gültig bis 12:00 Uhr des darauffolgenden Bankwerktages (2023-01-25T12:00:37+01:00)</description>
+      <pubDate>Wed, 25 Jan 2023 11:00:37 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#LSFF_1.5_2023-01-24</guid>
+      <dc:date>2023-01-25T11:00:37Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>1.5</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>2</cb:decimals>
+          </cb:observation>
+          <cb:rateName>LSFF</cb:rateName>
+          <cb:rateType>Sondersatz (Engpassfinanzierungsfazilität) / gültig bis 12:00 Uhr des darauffolgenden Bankwerktages</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-24</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 0.94 SARH 2023-01-24 SNB SARON</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>SARON / Fixing Handelsschluss (2023-01-25T12:00:37+01:00)</description>
+      <pubDate>Wed, 25 Jan 2023 11:00:37 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#SARH_0.94_2023-01-24</guid>
+      <dc:date>2023-01-25T11:00:37Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>0.94</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>2</cb:decimals>
+          </cb:observation>
+          <cb:rateName>SARH</cb:rateName>
+          <cb:rateType>SARON / Fixing Handelsschluss</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-24</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 1 SNBLZ 2023-01-24 SNB SNB-Leitzins</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>SNB-Leitzins / gültig ab 16.12.2022 (2023-01-25T12:00:37+01:00)</description>
+      <pubDate>Wed, 25 Jan 2023 11:00:37 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#SNBLZ_1_2023-01-24</guid>
+      <dc:date>2023-01-25T11:00:37Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>1</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>2</cb:decimals>
+          </cb:observation>
+          <cb:rateName>SNBLZ</cb:rateName>
+          <cb:rateType>SNB-Leitzins / gültig ab 16.12.2022</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-24</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 28 SNBFBF 2023-01-24 SNB Faktor für die Limite</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Faktor für die Limite / gültig ab 16.12.2022 (2023-01-25T12:00:37+01:00)</description>
+      <pubDate>Wed, 25 Jan 2023 11:00:37 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#SNBFBF_28_2023-01-24</guid>
+      <dc:date>2023-01-25T11:00:37Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>28</cb:value>
+            <cb:unit>factor</cb:unit>
+            <cb:decimals>0</cb:decimals>
+          </cb:observation>
+          <cb:rateName>SNBFBF</cb:rateName>
+          <cb:rateType>Faktor für die Limite / gültig ab 16.12.2022</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-24</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 1 SNBGIRO1 2023-01-24 SNB Zinssatz auf Sichtguthaben bis zur Limite</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Zinssatz auf Sichtguthaben bis zur Limite / gültig ab 16.12.2022 (2023-01-25T12:00:37+01:00)</description>
+      <pubDate>Wed, 25 Jan 2023 11:00:37 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#SNBGIRO1_1_2023-01-24</guid>
+      <dc:date>2023-01-25T11:00:37Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>1</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>2</cb:decimals>
+          </cb:observation>
+          <cb:rateName>SNBGIRO1</cb:rateName>
+          <cb:rateType>Zinssatz auf Sichtguthaben bis zur Limite / gültig ab 16.12.2022</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-24</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 0.5 SNBGIRO2 2023-01-24 SNB Zinssatz auf Sichtguthaben über der Limite</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Zinssatz auf Sichtguthaben über der Limite / gültig ab 16.12.2022 (2023-01-25T12:00:37+01:00)</description>
+      <pubDate>Wed, 25 Jan 2023 11:00:37 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#SNBGIRO2_0.5_2023-01-24</guid>
+      <dc:date>2023-01-25T11:00:37Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>0.5</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>2</cb:decimals>
+          </cb:observation>
+          <cb:rateName>SNBGIRO2</cb:rateName>
+          <cb:rateType>Zinssatz auf Sichtguthaben über der Limite / gültig ab 16.12.2022</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-24</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 50 Discount 2023-01-24 SNB Zinsabschlag in Basispunkten</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Zinsabschlag in Basispunkten / basis point (2023-01-25T12:00:37+01:00)</description>
+      <pubDate>Wed, 25 Jan 2023 11:00:37 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#Discount_50_2023-01-24</guid>
+      <dc:date>2023-01-25T11:00:37Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>50</cb:value>
+            <cb:unit>basis point</cb:unit>
+            <cb:decimals>0</cb:decimals>
+          </cb:observation>
+          <cb:rateName>Discount</cb:rateName>
+          <cb:rateType>Zinsabschlag in Basispunkten / basis point</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-24</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 1.134 R10 2023-01-25 SNB Rendite Bundesobligationen Eidgenossenschaft</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Rendite Bundesobligationen Eidgenossenschaft / Kassazinssatz bei einer Laufzeit von 10 Jahren (2023-01-26T12:04:31+01:00)</description>
+      <pubDate>Thu, 26 Jan 2023 11:04:31 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#R10_1.134_2023-01-25</guid>
+      <dc:date>2023-01-26T11:04:31Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>1.134</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>3</cb:decimals>
+          </cb:observation>
+          <cb:rateName>R10</cb:rateName>
+          <cb:rateType>Rendite Bundesobligationen Eidgenossenschaft / Kassazinssatz bei einer Laufzeit von 10 Jahren</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-25</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 1.5 LSFF 2023-01-25 SNB Sondersatz (Engpassfinanzierungsfazilität)</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Sondersatz (Engpassfinanzierungsfazilität) / gültig bis 12:00 Uhr des darauffolgenden Bankwerktages (2023-01-26T12:04:31+01:00)</description>
+      <pubDate>Thu, 26 Jan 2023 11:04:31 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#LSFF_1.5_2023-01-25</guid>
+      <dc:date>2023-01-26T11:04:31Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>1.5</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>2</cb:decimals>
+          </cb:observation>
+          <cb:rateName>LSFF</cb:rateName>
+          <cb:rateType>Sondersatz (Engpassfinanzierungsfazilität) / gültig bis 12:00 Uhr des darauffolgenden Bankwerktages</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-25</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 0.95 SARH 2023-01-25 SNB SARON</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>SARON / Fixing Handelsschluss (2023-01-26T12:04:31+01:00)</description>
+      <pubDate>Thu, 26 Jan 2023 11:04:31 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#SARH_0.95_2023-01-25</guid>
+      <dc:date>2023-01-26T11:04:31Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>0.95</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>2</cb:decimals>
+          </cb:observation>
+          <cb:rateName>SARH</cb:rateName>
+          <cb:rateType>SARON / Fixing Handelsschluss</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-25</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 1 SNBLZ 2023-01-25 SNB SNB-Leitzins</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>SNB-Leitzins / gültig ab 16.12.2022 (2023-01-26T12:04:31+01:00)</description>
+      <pubDate>Thu, 26 Jan 2023 11:04:31 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#SNBLZ_1_2023-01-25</guid>
+      <dc:date>2023-01-26T11:04:31Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>1</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>2</cb:decimals>
+          </cb:observation>
+          <cb:rateName>SNBLZ</cb:rateName>
+          <cb:rateType>SNB-Leitzins / gültig ab 16.12.2022</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-25</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 28 SNBFBF 2023-01-25 SNB Faktor für die Limite</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Faktor für die Limite / gültig ab 16.12.2022 (2023-01-26T12:04:31+01:00)</description>
+      <pubDate>Thu, 26 Jan 2023 11:04:31 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#SNBFBF_28_2023-01-25</guid>
+      <dc:date>2023-01-26T11:04:31Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>28</cb:value>
+            <cb:unit>factor</cb:unit>
+            <cb:decimals>0</cb:decimals>
+          </cb:observation>
+          <cb:rateName>SNBFBF</cb:rateName>
+          <cb:rateType>Faktor für die Limite / gültig ab 16.12.2022</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-25</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 1 SNBGIRO1 2023-01-25 SNB Zinssatz auf Sichtguthaben bis zur Limite</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Zinssatz auf Sichtguthaben bis zur Limite / gültig ab 16.12.2022 (2023-01-26T12:04:31+01:00)</description>
+      <pubDate>Thu, 26 Jan 2023 11:04:31 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#SNBGIRO1_1_2023-01-25</guid>
+      <dc:date>2023-01-26T11:04:31Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>1</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>2</cb:decimals>
+          </cb:observation>
+          <cb:rateName>SNBGIRO1</cb:rateName>
+          <cb:rateType>Zinssatz auf Sichtguthaben bis zur Limite / gültig ab 16.12.2022</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-25</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 0.5 SNBGIRO2 2023-01-25 SNB Zinssatz auf Sichtguthaben über der Limite</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Zinssatz auf Sichtguthaben über der Limite / gültig ab 16.12.2022 (2023-01-26T12:04:31+01:00)</description>
+      <pubDate>Thu, 26 Jan 2023 11:04:31 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#SNBGIRO2_0.5_2023-01-25</guid>
+      <dc:date>2023-01-26T11:04:31Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>0.5</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>2</cb:decimals>
+          </cb:observation>
+          <cb:rateName>SNBGIRO2</cb:rateName>
+          <cb:rateType>Zinssatz auf Sichtguthaben über der Limite / gültig ab 16.12.2022</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-25</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 50 Discount 2023-01-25 SNB Zinsabschlag in Basispunkten</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Zinsabschlag in Basispunkten / basis point (2023-01-26T12:04:31+01:00)</description>
+      <pubDate>Thu, 26 Jan 2023 11:04:31 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#Discount_50_2023-01-25</guid>
+      <dc:date>2023-01-26T11:04:31Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>50</cb:value>
+            <cb:unit>basis point</cb:unit>
+            <cb:decimals>0</cb:decimals>
+          </cb:observation>
+          <cb:rateName>Discount</cb:rateName>
+          <cb:rateType>Zinsabschlag in Basispunkten / basis point</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-25</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 1.203 R10 2023-01-26 SNB Rendite Bundesobligationen Eidgenossenschaft</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Rendite Bundesobligationen Eidgenossenschaft / Kassazinssatz bei einer Laufzeit von 10 Jahren (2023-01-27T12:08:37+01:00)</description>
+      <pubDate>Fri, 27 Jan 2023 11:08:37 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#R10_1.203_2023-01-26</guid>
+      <dc:date>2023-01-27T11:08:37Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>1.203</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>3</cb:decimals>
+          </cb:observation>
+          <cb:rateName>R10</cb:rateName>
+          <cb:rateType>Rendite Bundesobligationen Eidgenossenschaft / Kassazinssatz bei einer Laufzeit von 10 Jahren</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-26</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 1.5 LSFF 2023-01-26 SNB Sondersatz (Engpassfinanzierungsfazilität)</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Sondersatz (Engpassfinanzierungsfazilität) / gültig bis 12:00 Uhr des darauffolgenden Bankwerktages (2023-01-27T12:08:37+01:00)</description>
+      <pubDate>Fri, 27 Jan 2023 11:08:37 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#LSFF_1.5_2023-01-26</guid>
+      <dc:date>2023-01-27T11:08:37Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>1.5</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>2</cb:decimals>
+          </cb:observation>
+          <cb:rateName>LSFF</cb:rateName>
+          <cb:rateType>Sondersatz (Engpassfinanzierungsfazilität) / gültig bis 12:00 Uhr des darauffolgenden Bankwerktages</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-26</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 0.95 SARH 2023-01-26 SNB SARON</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>SARON / Fixing Handelsschluss (2023-01-27T12:08:37+01:00)</description>
+      <pubDate>Fri, 27 Jan 2023 11:08:37 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#SARH_0.95_2023-01-26</guid>
+      <dc:date>2023-01-27T11:08:37Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>0.95</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>2</cb:decimals>
+          </cb:observation>
+          <cb:rateName>SARH</cb:rateName>
+          <cb:rateType>SARON / Fixing Handelsschluss</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-26</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 1 SNBLZ 2023-01-26 SNB SNB-Leitzins</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>SNB-Leitzins / gültig ab 16.12.2022 (2023-01-27T12:08:37+01:00)</description>
+      <pubDate>Fri, 27 Jan 2023 11:08:37 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#SNBLZ_1_2023-01-26</guid>
+      <dc:date>2023-01-27T11:08:37Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>1</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>2</cb:decimals>
+          </cb:observation>
+          <cb:rateName>SNBLZ</cb:rateName>
+          <cb:rateType>SNB-Leitzins / gültig ab 16.12.2022</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-26</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 28 SNBFBF 2023-01-26 SNB Faktor für die Limite</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Faktor für die Limite / gültig ab 16.12.2022 (2023-01-27T12:08:37+01:00)</description>
+      <pubDate>Fri, 27 Jan 2023 11:08:37 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#SNBFBF_28_2023-01-26</guid>
+      <dc:date>2023-01-27T11:08:37Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>28</cb:value>
+            <cb:unit>factor</cb:unit>
+            <cb:decimals>0</cb:decimals>
+          </cb:observation>
+          <cb:rateName>SNBFBF</cb:rateName>
+          <cb:rateType>Faktor für die Limite / gültig ab 16.12.2022</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-26</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 1 SNBGIRO1 2023-01-26 SNB Zinssatz auf Sichtguthaben bis zur Limite</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Zinssatz auf Sichtguthaben bis zur Limite / gültig ab 16.12.2022 (2023-01-27T12:08:37+01:00)</description>
+      <pubDate>Fri, 27 Jan 2023 11:08:37 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#SNBGIRO1_1_2023-01-26</guid>
+      <dc:date>2023-01-27T11:08:37Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>1</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>2</cb:decimals>
+          </cb:observation>
+          <cb:rateName>SNBGIRO1</cb:rateName>
+          <cb:rateType>Zinssatz auf Sichtguthaben bis zur Limite / gültig ab 16.12.2022</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-26</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 0.5 SNBGIRO2 2023-01-26 SNB Zinssatz auf Sichtguthaben über der Limite</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Zinssatz auf Sichtguthaben über der Limite / gültig ab 16.12.2022 (2023-01-27T12:08:37+01:00)</description>
+      <pubDate>Fri, 27 Jan 2023 11:08:37 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#SNBGIRO2_0.5_2023-01-26</guid>
+      <dc:date>2023-01-27T11:08:37Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>0.5</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>2</cb:decimals>
+          </cb:observation>
+          <cb:rateName>SNBGIRO2</cb:rateName>
+          <cb:rateType>Zinssatz auf Sichtguthaben über der Limite / gültig ab 16.12.2022</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-26</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 50 Discount 2023-01-26 SNB Zinsabschlag in Basispunkten</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Zinsabschlag in Basispunkten / basis point (2023-01-27T12:08:37+01:00)</description>
+      <pubDate>Fri, 27 Jan 2023 11:08:37 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#Discount_50_2023-01-26</guid>
+      <dc:date>2023-01-27T11:08:37Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>50</cb:value>
+            <cb:unit>basis point</cb:unit>
+            <cb:decimals>0</cb:decimals>
+          </cb:observation>
+          <cb:rateName>Discount</cb:rateName>
+          <cb:rateType>Zinsabschlag in Basispunkten / basis point</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-26</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 1.231 R10 2023-01-27 SNB Rendite Bundesobligationen Eidgenossenschaft</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Rendite Bundesobligationen Eidgenossenschaft / Kassazinssatz bei einer Laufzeit von 10 Jahren (2023-01-27T12:08:38+01:00)</description>
+      <pubDate>Fri, 27 Jan 2023 11:08:38 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#R10_1.231_2023-01-27</guid>
+      <dc:date>2023-01-27T11:08:38Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>1.231</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>3</cb:decimals>
+          </cb:observation>
+          <cb:rateName>R10</cb:rateName>
+          <cb:rateType>Rendite Bundesobligationen Eidgenossenschaft / Kassazinssatz bei einer Laufzeit von 10 Jahren</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-27</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 1.5 LSFF 2023-01-27 SNB Sondersatz (Engpassfinanzierungsfazilität)</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Sondersatz (Engpassfinanzierungsfazilität) / gültig bis 12:00 Uhr des darauffolgenden Bankwerktages (2023-01-27T12:08:38+01:00)</description>
+      <pubDate>Fri, 27 Jan 2023 11:08:38 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#LSFF_1.5_2023-01-27</guid>
+      <dc:date>2023-01-27T11:08:38Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>1.5</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>2</cb:decimals>
+          </cb:observation>
+          <cb:rateName>LSFF</cb:rateName>
+          <cb:rateType>Sondersatz (Engpassfinanzierungsfazilität) / gültig bis 12:00 Uhr des darauffolgenden Bankwerktages</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-27</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 1 SNBLZ 2023-01-27 SNB SNB-Leitzins</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>SNB-Leitzins / gültig ab 16.12.2022 (2023-01-27T12:08:38+01:00)</description>
+      <pubDate>Fri, 27 Jan 2023 11:08:38 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#SNBLZ_1_2023-01-27</guid>
+      <dc:date>2023-01-27T11:08:38Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>1</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>2</cb:decimals>
+          </cb:observation>
+          <cb:rateName>SNBLZ</cb:rateName>
+          <cb:rateType>SNB-Leitzins / gültig ab 16.12.2022</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-27</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 28 SNBFBF 2023-01-27 SNB Faktor für die Limite</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Faktor für die Limite / gültig ab 16.12.2022 (2023-01-27T12:08:38+01:00)</description>
+      <pubDate>Fri, 27 Jan 2023 11:08:38 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#SNBFBF_28_2023-01-27</guid>
+      <dc:date>2023-01-27T11:08:38Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>28</cb:value>
+            <cb:unit>factor</cb:unit>
+            <cb:decimals>0</cb:decimals>
+          </cb:observation>
+          <cb:rateName>SNBFBF</cb:rateName>
+          <cb:rateType>Faktor für die Limite / gültig ab 16.12.2022</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-27</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 1 SNBGIRO1 2023-01-27 SNB Zinssatz auf Sichtguthaben bis zur Limite</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Zinssatz auf Sichtguthaben bis zur Limite / gültig ab 16.12.2022 (2023-01-27T12:08:38+01:00)</description>
+      <pubDate>Fri, 27 Jan 2023 11:08:38 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#SNBGIRO1_1_2023-01-27</guid>
+      <dc:date>2023-01-27T11:08:38Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>1</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>2</cb:decimals>
+          </cb:observation>
+          <cb:rateName>SNBGIRO1</cb:rateName>
+          <cb:rateType>Zinssatz auf Sichtguthaben bis zur Limite / gültig ab 16.12.2022</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-27</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 0.5 SNBGIRO2 2023-01-27 SNB Zinssatz auf Sichtguthaben über der Limite</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Zinssatz auf Sichtguthaben über der Limite / gültig ab 16.12.2022 (2023-01-27T12:08:38+01:00)</description>
+      <pubDate>Fri, 27 Jan 2023 11:08:38 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#SNBGIRO2_0.5_2023-01-27</guid>
+      <dc:date>2023-01-27T11:08:38Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>0.5</cb:value>
+            <cb:unit>percent</cb:unit>
+            <cb:decimals>2</cb:decimals>
+          </cb:observation>
+          <cb:rateName>SNBGIRO2</cb:rateName>
+          <cb:rateType>Zinssatz auf Sichtguthaben über der Limite / gültig ab 16.12.2022</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-27</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+    <item>
+      <title>CH: 50 Discount 2023-01-27 SNB Zinsabschlag in Basispunkten</title>
+      <link>https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2</link>
+      <description>Zinsabschlag in Basispunkten / basis point (2023-01-27T12:08:38+01:00)</description>
+      <pubDate>Fri, 27 Jan 2023 11:08:38 GMT</pubDate>
+      <guid isPermaLink="false">https://www.snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates#t2#Discount_50_2023-01-27</guid>
+      <dc:date>2023-01-27T11:08:38Z</dc:date>
+      <dc:language>de</dc:language>
+      <cb:statistics rdf:parseType="Resource">
+        <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Statistics" />
+        <cb:country>CH</cb:country>
+        <cb:institutionAbbrev>SNB</cb:institutionAbbrev>
+        <cb:interestRate rdf:parseType="Resource">
+          <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#InterestRate" />
+          <cb:observation rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#Observation" />
+            <cb:value>50</cb:value>
+            <cb:unit>basis point</cb:unit>
+            <cb:decimals>0</cb:decimals>
+          </cb:observation>
+          <cb:rateName>Discount</cb:rateName>
+          <cb:rateType>Zinsabschlag in Basispunkten / basis point</cb:rateType>
+          <cb:observationPeriod rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.cbwiki.net/wiki/index.php/RSS-CB_1.2_RDF_Schema#ObservationPeriod" />
+            <cb:frequency>daily</cb:frequency>
+            <cb:period>2023-01-27</cb:period>
+          </cb:observationPeriod>
+        </cb:interestRate>
+      </cb:statistics>
+    </item>
+  </channel>
+</rss>
