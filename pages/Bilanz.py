@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import altair as alt
+import requests
 
 
 st.set_page_config(page_title="Bilanz", layout="wide")
@@ -12,6 +13,25 @@ def get_snb_data():
     return data
 
 data = get_snb_data()
+
+@st.experimental_memo
+def get_snb_dimensions():
+    url = "https://data.snb.ch/api/cube/snbbipo/dimensions/de"
+    data_dimensions = requests.get(url).json()
+    data_dimensions = data_dimensions["dimensions"]
+    dimensions = pd.json_normalize(data_dimensions,
+        record_path=["dimensionItems", "dimensionItems"], 
+        meta=[
+            "name",
+            ["dimensionItems","name"]
+            ],
+        meta_prefix='meta_'
+    )
+    return dimensions
+
+dimensions = get_snb_dimensions()
+
+data =  pd.merge(data,dimensions, how='left',left_on='D0',right_on='id', copy=False).drop('id', axis=1)
 
 selection = alt.selection_single(on='mouseover', empty="none")
 hightlight = alt.condition(selection, alt.value('black'), alt.Color('D0:N', legend=None))
@@ -47,7 +67,7 @@ aktive = alt.Chart(data).transform_filter(
     alt.Y('Date:O',
     scale=alt.Scale(reverse=True,), axis=alt.Axis(title=None)),
     color=hightlight,
-    tooltip=['Date:O', 'D0', alt.Tooltip('Value:Q', format=',.0f'), alt.Tooltip('Share:Q', format='.1%'), alt.Tooltip('MoM:Q', format='.1%'), alt.Tooltip('QoQ:Q', format='.1%'), alt.Tooltip('YoY:Q', format='.1%'), alt.Tooltip('Yo10Y:Q', format='.1%')]
+    tooltip=['Date:O', 'name', alt.Tooltip('Value:Q', format=',.0f'), alt.Tooltip('Share:Q', format='.1%'), alt.Tooltip('MoM:Q', format='.1%'), alt.Tooltip('QoQ:Q', format='.1%'), alt.Tooltip('YoY:Q', format='.1%'), alt.Tooltip('Yo10Y:Q', format='.1%')]
 ).add_selection(
     selection
 )
@@ -82,7 +102,7 @@ aktive_total = alt.Chart(data).transform_filter(
 ).encode(
     x='Value:Q',
     y='Date:O',
-    tooltip=['Date:O', 'D0', alt.Tooltip('Value:Q', format=',.0f'), alt.Tooltip('Share:Q', format='.1%'), alt.Tooltip('MoM:Q', format='.1%'), alt.Tooltip('QoQ:Q', format='.1%'), alt.Tooltip('YoY:Q', format='.1%'), alt.Tooltip('Yo10Y:Q', format='.1%')]
+    tooltip=['Date:O', 'name', alt.Tooltip('Value:Q', format=',.0f'), alt.Tooltip('Share:Q', format='.1%'), alt.Tooltip('MoM:Q', format='.1%'), alt.Tooltip('QoQ:Q', format='.1%'), alt.Tooltip('YoY:Q', format='.1%'), alt.Tooltip('Yo10Y:Q', format='.1%')]
 )
 
 passive = alt.Chart(data).transform_filter(
@@ -116,7 +136,7 @@ passive = alt.Chart(data).transform_filter(
     alt.Y('Date:O',
     scale=alt.Scale(reverse=True,), axis=alt.Axis(orient="right", title=None)),
     color=hightlight,
-    tooltip=['Date:O', 'D0', alt.Tooltip('Value:Q', format=',.0f'), alt.Tooltip('Share:Q', format='.1%'), alt.Tooltip('MoM:Q', format='.1%'), alt.Tooltip('QoQ:Q', format='.1%'), alt.Tooltip('YoY:Q', format='.1%'), alt.Tooltip('Yo10Y:Q', format='.1%')]
+    tooltip=['Date:O', 'name', alt.Tooltip('Value:Q', format=',.0f'), alt.Tooltip('Share:Q', format='.1%'), alt.Tooltip('MoM:Q', format='.1%'), alt.Tooltip('QoQ:Q', format='.1%'), alt.Tooltip('YoY:Q', format='.1%'), alt.Tooltip('Yo10Y:Q', format='.1%')]
 ).add_selection(
     selection
 )
@@ -151,7 +171,7 @@ passive_total = alt.Chart(data).transform_filter(
 ).encode(
     x='Value:Q',
     y='Date:O',
-    tooltip=['Date:O', 'D0', alt.Tooltip('Value:Q', format=',.0f'), alt.Tooltip('Share:Q', format='.1%'), alt.Tooltip('MoM:Q', format='.1%'), alt.Tooltip('QoQ:Q', format='.1%'), alt.Tooltip('YoY:Q', format='.1%'), alt.Tooltip('Yo10Y:Q', format='.1%')]
+    tooltip=['Date:O', 'name', alt.Tooltip('Value:Q', format=',.0f'), alt.Tooltip('Share:Q', format='.1%'), alt.Tooltip('MoM:Q', format='.1%'), alt.Tooltip('QoQ:Q', format='.1%'), alt.Tooltip('YoY:Q', format='.1%'), alt.Tooltip('Yo10Y:Q', format='.1%')]
 )
 
 col1, col2 = st.columns(2)
