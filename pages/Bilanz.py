@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 import requests
-import Charts
+from utilities import Charts
 
 st.set_page_config(page_title='Bilanz', layout='wide')
 
