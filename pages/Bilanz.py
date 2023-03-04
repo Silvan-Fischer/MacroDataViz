@@ -2,11 +2,11 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 import requests
-
+import Charts
 
 st.set_page_config(page_title='Bilanz', layout='wide')
 
-
+# Get Data from SNB API
 @st.experimental_memo
 def get_snb_data():
     data = pd.read_csv('https://data.snb.ch/api/cube/snbbipo/data/csv/de', header=2, delimiter=';')
@@ -14,6 +14,7 @@ def get_snb_data():
 
 data = get_snb_data()
 
+# Get Data-Labels from SNB API
 @st.experimental_memo
 def get_snb_dimensions():
     url = 'https://data.snb.ch/api/cube/snbbipo/dimensions/de'
@@ -27,259 +28,90 @@ def get_snb_dimensions():
             ],
         meta_prefix='meta_'
     )
+    dimensions.drop(columns=['meta_name'], inplace=True)
+    dimensions.rename(columns={"id": "position_id", "name": "position_name", "meta_dimensionItems.name": "position_category"}, inplace=True)
     return dimensions
 
 dimensions = get_snb_dimensions()
 
-moneyness = {"id":{"0":"GFG","1":"D","2":"RIWF","3":"IZ","4":"W","5":"FRGSF","6":"FRGUSD","7":"GSGSF","8":"IG",
+# Add aditional dimensions not in original dataset
+moneyness = {"position_id":{"0":"GFG","1":"D","2":"RIWF","3":"IZ","4":"W","5":"FRGSF","6":"FRGUSD","7":"GSGSF","8":"IG",
 "9":"GD","10":"FI","11":"WSF","12":"DS","13":"UA","14":"T0","15":"N","16":"GB","17":"VB","18":"GBI",
 "19":"US","20":"VRGSF","21":"ES","22":"UT","23":"VF","24":"AIWFS","25":"SP","26":"RE","27":"T1"}, 
-"moneyness":{"0":"Else","1":"CHF","2":"Else","3":"Else","4":"Else","5":"CHF","6":"Else","7":"CHF","8":"CHF",
-"9":"CHF","10":"CHF","11":"CHF","12":"CHF","13":"CHF","14":"Else","15":"CHF","16":"CHF","17":"CHF","18":"CHF",
-"19":"CHF","20":"CHF","21":"CHF","22":"CHF","23":"Else","24":"Else","25":"Else","26":"Else","27":"Else"}}
+"moneyness":{"0":"Restliche Positionen","1":"CHF Liquidität","2":"Restliche Positionen","3":"Restliche Positionen","4":"Restliche Positionen","5":"CHF Liquidität","6":"Restliche Positionen","7":"CHF Liquidität","8":"CHF Liquidität",
+"9":"CHF Liquidität","10":"CHF Liquidität","11":"CHF Liquidität","12":"CHF Liquidität","13":"CHF Liquidität","14":"Restliche Positionen","15":"CHF Liquidität","16":"CHF Liquidität","17":"CHF Liquidität","18":"CHF Liquidität",
+"19":"CHF Liquidität","20":"CHF Liquidität","21":"CHF Liquidität","22":"CHF Liquidität","23":"Restliche Positionen","24":"Restliche Positionen","25":"Restliche Positionen","26":"Restliche Positionen","27":"Restliche Positionen"}}
 
 moneyness = pd.DataFrame.from_dict(moneyness)
-dimensions = pd.merge(dimensions, moneyness, how='left',left_on='id',right_on='id', copy=False)
-data =  pd.merge(data,dimensions, how='left',left_on='D0',right_on='id', copy=False).drop('id', axis=1)
 
-selection = alt.selection_single(on='mouseover', empty='none')
-hightlight = alt.condition(selection, alt.value('black'), alt.Color('order:N', legend=None), sort='descending')
+# Create combined dataframe with data and labels
+dimensions = pd.merge(dimensions, moneyness, how='left',left_on='position_id',right_on='position_id', copy=False)
+data =  pd.merge(data,dimensions, how='left',left_on='D0',right_on='position_id', copy=False).drop('D0', axis=1)
 
-D0_filter_a = ['D', 'GFG', 'RIWF', 'IZ', 'W', 'FRGSF', 'FRGUSD', 'GSGSF', 'IG', 'GD', 'FI', 'WSF', 'DS', 'UA']
+# Define lists which are used to sort the dataframes and filer the data for the different charts
+sort_a = ['D', 'GFG', 'RIWF', 'IZ', 'W', 'FRGSF', 'FRGUSD', 'GSGSF', 'IG', 'GD', 'FI', 'WSF', 'DS', 'UA']
+sort_p = ['VRGSF', 'ES', 'GB', 'VB', 'GBI', 'US',  'UT', 'N', 'VF', 'AIWFS', 'SP', 'RE']
 
-aktive = alt.Chart(data).transform_filter(
-    alt.FieldOneOfPredicate(field='D0', oneOf=D0_filter_a)
-).transform_calculate( 
-    order=f"indexof({D0_filter_a}, datum.D0)"
-).transform_window(
-    window = [{'op': 'lag', 'field': 'Value', 'param': 1, 'as': 'Value_1'}],
-    groupby = ['D0']
-).transform_window(
-    window = [{'op': 'lag', 'field': 'Value', 'param': 3, 'as': 'Value_3'}],
-    groupby = ['D0']
-).transform_window(
-    window = [{'op': 'lag', 'field': 'Value', 'param': 12, 'as': 'Value_12'}],
-    groupby = ['D0']
-).transform_window(
-    window = [{'op': 'lag', 'field': 'Value', 'param': 120, 'as': 'Value_120'}],
-    groupby = ['D0']
-).transform_window(
-    Total='sum(Value)',
-    groupby=['Date'],
-    frame=[None, None]
-).transform_calculate(
-    MoM = (alt.datum.Value - alt.datum.Value_1) / alt.datum.Value_1,
-    QoQ = (alt.datum.Value - alt.datum.Value_3) / alt.datum.Value_3,
-    YoY = (alt.datum.Value - alt.datum.Value_12) / alt.datum.Value_12,
-    Yo10Y = (alt.datum.Value - alt.datum.Value_120) / alt.datum.Value_120,
-    Share = alt.datum.Value / alt.datum.Total
-).mark_bar(opacity=0.8
-).encode(
-    alt.X('Value:Q',
-    scale=alt.Scale(reverse=True, domainMin=0), axis=alt.Axis(orient='top', title='Monatsende | In Millionen Franken' , ticks=True, tickSize=10, tickColor='#e6eaf1')),
-    alt.Y('Date:O',
-    scale=alt.Scale(reverse=True,), axis=alt.Axis(title=None)),
-    order='order:O',
-    color=hightlight,
-    tooltip=['Date:O', 'name', alt.Tooltip('Value:Q', format=',.0f'), alt.Tooltip('Share:Q', format='.1%'), alt.Tooltip('MoM:Q', format='.1%'), alt.Tooltip('QoQ:Q', format='.1%'), alt.Tooltip('YoY:Q', format='.1%'), alt.Tooltip('Yo10Y:Q', format='.1%')]
-).add_selection(
-    selection
-)
+# Sort dataframe as needed for ordering of elements in visualisations
+data.position_id = data.position_id.astype("category")
+data.position_id = data.position_id.cat.set_categories(sort_a + sort_p + ["T0", "T1"])
+data = data.sort_values(by=['Date','position_id'], ignore_index=True)
 
-aktive_total = alt.Chart(data).transform_filter(
-    alt.FieldOneOfPredicate(field='D0', oneOf=['T0'])
-).transform_window(
-    window = [{'op': 'lag', 'field': 'Value', 'param': 1, 'as': 'Value_1'}],
-    groupby = ['D0']
-).transform_window(
-    window = [{'op': 'lag', 'field': 'Value', 'param': 3, 'as': 'Value_3'}],
-    groupby = ['D0']
-).transform_window(
-    window = [{'op': 'lag', 'field': 'Value', 'param': 12, 'as': 'Value_12'}],
-    groupby = ['D0']
-).transform_window(
-    window = [{'op': 'lag', 'field': 'Value', 'param': 120, 'as': 'Value_120'}],
-    groupby = ['D0']
-).transform_window(
-    Total='sum(Value)',
-    groupby=['Date'],
-    frame=[None, None]
-).transform_calculate(
-    MoM = (alt.datum.Value - alt.datum.Value_1) / alt.datum.Value_1,
-    QoQ = (alt.datum.Value - alt.datum.Value_3) / alt.datum.Value_3,
-    YoY = (alt.datum.Value - alt.datum.Value_12) / alt.datum.Value_12,
-    Yo10Y = (alt.datum.Value - alt.datum.Value_120) / alt.datum.Value_120,
-    Share = alt.datum.Value / alt.datum.Total
-).mark_tick(
-    color='black',
-    thickness=3
-).encode(
-    x='Value:Q',
-    y='Date:O',
-    tooltip=['Date:O', 'name', alt.Tooltip('Value:Q', format=',.0f'), alt.Tooltip('Share:Q', format='.1%'), alt.Tooltip('MoM:Q', format='.1%'), alt.Tooltip('QoQ:Q', format='.1%'), alt.Tooltip('YoY:Q', format='.1%'), alt.Tooltip('Yo10Y:Q', format='.1%')]
-)
+# Create datasubsets in oder to not exceed altair limit of 5000 rows
+data_a = data[data['position_category'].isin(["Aktiven"])] 
+data_p = data[data['position_category'].isin(["Passiven"])]
 
-D0_filter_p = ['VRGSF', 'ES', 'GB', 'VB', 'GBI', 'US',  'UT', 'N', 'VF', 'AIWFS', 'SP', 'RE']
+# Inject CSS into streamlit
 
-passive = alt.Chart(data).transform_filter(
-    alt.FieldOneOfPredicate(field='D0', oneOf=D0_filter_p)
-).transform_calculate( 
-    order=f"indexof({D0_filter_p}, datum.D0)"
-).transform_window(
-    window = [{'op': 'lag', 'field': 'Value', 'param': 1, 'as': 'Value_1'}],
-    groupby = ['D0']
-).transform_window(
-    window = [{'op': 'lag', 'field': 'Value', 'param': 3, 'as': 'Value_3'}],
-    groupby = ['D0']
-).transform_window(
-    window = [{'op': 'lag', 'field': 'Value', 'param': 12, 'as': 'Value_12'}],
-    groupby = ['D0']
-).transform_window(
-    window = [{'op': 'lag', 'field': 'Value', 'param': 120, 'as': 'Value_120'}],
-    groupby = ['D0']
-).transform_window(
-    Total='sum(Value)',
-    groupby=['Date'],
-    frame=[None, None]
-).transform_calculate(
-    MoM = (alt.datum.Value - alt.datum.Value_1) / alt.datum.Value_1,
-    QoQ = (alt.datum.Value - alt.datum.Value_3) / alt.datum.Value_3,
-    YoY = (alt.datum.Value - alt.datum.Value_12) / alt.datum.Value_12,
-    Yo10Y = (alt.datum.Value - alt.datum.Value_120) / alt.datum.Value_120,
-    Share = alt.datum.Value / alt.datum.Total
-).mark_bar(opacity=0.8
-).encode(
-    alt.X('Value:Q',
-    scale=alt.Scale(domainMin=0), axis=alt.Axis(orient='top', title='Monatsende | In Millionen Franken' , ticks=True, tickSize=10, tickColor='#e6eaf1')),
-    alt.Y('Date:O',
-    scale=alt.Scale(reverse=True,), axis=alt.Axis(orient='right', title=None)),
-    color=hightlight,
-    order='order:O',
-    tooltip=['Date:O', 'name', alt.Tooltip('Value:Q', format=',.0f'), alt.Tooltip('Share:Q', format='.1%'), alt.Tooltip('MoM:Q', format='.1%'), alt.Tooltip('QoQ:Q', format='.1%'), alt.Tooltip('YoY:Q', format='.1%'), alt.Tooltip('Yo10Y:Q', format='.1%')]
-).add_selection(
-    selection
-)
+st.markdown(""" <style>
+form.vega-bindings {
+  position: absolute;
+  left: 10px;
+  top: 0px;
+}
+</style> """, unsafe_allow_html=True)
 
-passive_total = alt.Chart(data).transform_filter(
-    alt.FieldOneOfPredicate(field='D0', oneOf=['T1'])
-).transform_window(
-    window = [{'op': 'lag', 'field': 'Value', 'param': 1, 'as': 'Value_1'}],
-    groupby = ['D0']
-).transform_window(
-    window = [{'op': 'lag', 'field': 'Value', 'param': 3, 'as': 'Value_3'}],
-    groupby = ['D0']
-).transform_window(
-    window = [{'op': 'lag', 'field': 'Value', 'param': 12, 'as': 'Value_12'}],
-    groupby = ['D0']
-).transform_window(
-    window = [{'op': 'lag', 'field': 'Value', 'param': 120, 'as': 'Value_120'}],
-    groupby = ['D0']
-).transform_window(
-    Total='sum(Value)',
-    groupby=['Date'],
-    frame=[None, None]
-).transform_calculate(
-    MoM = (alt.datum.Value - alt.datum.Value_1) / alt.datum.Value_1,
-    QoQ = (alt.datum.Value - alt.datum.Value_3) / alt.datum.Value_3,
-    YoY = (alt.datum.Value - alt.datum.Value_12) / alt.datum.Value_12,
-    Yo10Y = (alt.datum.Value - alt.datum.Value_120) / alt.datum.Value_120,
-    Share = alt.datum.Value / alt.datum.Total
-).mark_tick(
-    color='black',
-    thickness=3
-).encode(
-    x='Value:Q',
-    y='Date:O',
-    tooltip=['Date:O', 'name', alt.Tooltip('Value:Q', format=',.0f'), alt.Tooltip('Share:Q', format='.1%'), alt.Tooltip('MoM:Q', format='.1%'), alt.Tooltip('QoQ:Q', format='.1%'), alt.Tooltip('YoY:Q', format='.1%'), alt.Tooltip('Yo10Y:Q', format='.1%')]
-)
-
-flow = alt.Chart(data).transform_filter(
-    alt.FieldOneOfPredicate(field='D0', oneOf=D0_filter_p)
-).transform_calculate( 
-    order=f"indexof({D0_filter_p}, datum.D0)"
-).transform_window(
-    window = [{'op': 'lag', 'field': 'Value', 'param': 1, 'as': 'Value_1'}],
-    groupby = ['D0']
-).transform_window(
-    window = [{'op': 'lag', 'field': 'Value', 'param': 3, 'as': 'Value_3'}],
-    groupby = ['D0']
-).transform_window(
-    window = [{'op': 'lag', 'field': 'Value', 'param': 12, 'as': 'Value_12'}],
-    groupby = ['D0']
-).transform_window(
-    window = [{'op': 'lag', 'field': 'Value', 'param': 120, 'as': 'Value_120'}],
-    groupby = ['D0']
-).transform_window(
-    Total='sum(Value)',
-    groupby=['Date'],
-    frame=[None, None]
-).transform_calculate(
-    Flow = alt.datum.Value - alt.datum.Value_1,
-    MoM = (alt.datum.Value - alt.datum.Value_1) / alt.datum.Value_1,
-    QoQ = (alt.datum.Value - alt.datum.Value_3) / alt.datum.Value_3,
-    YoY = (alt.datum.Value - alt.datum.Value_12) / alt.datum.Value_12,
-    Yo10Y = (alt.datum.Value - alt.datum.Value_120) / alt.datum.Value_120,
-    Share = alt.datum.Value / alt.datum.Total
-).mark_bar(opacity=0.8
-).encode(
-    alt.X('Flow:Q',
-    scale = alt.Scale(domain=[-200000, 200000]), axis=alt.Axis(orient='top', title='Veränderung seit Vormonatsende | In Millionen Franken' , ticks=True, tickSize=10, tickColor='#e6eaf1')),
-    alt.Y('Date:O',
-    scale=alt.Scale(reverse=True,), axis=alt.Axis(orient='right', title=None)),
-    color=hightlight,
-    order='order:O',
-    tooltip=['Date:O', 'name', alt.Tooltip('Flow:Q', format='+.0f')]
-).add_selection(
-    selection
-)
-
-flow_total = alt.Chart(data).transform_filter(
-    alt.FieldOneOfPredicate(field='D0', oneOf=D0_filter_p)
-).transform_window(
-    window = [{'op': 'lag', 'field': 'Value', 'param': 1, 'as': 'Value_1'}],
-    groupby = ['D0']
-).transform_calculate(
-    Flow = alt.datum.Value - alt.datum.Value_1,
-).transform_window(
-    Total='sum(Flow)',
-    groupby=['Date','moneyness'],
-    frame=[None, None]
-).mark_tick(
-    color='black',
-    thickness=3
-).encode(
-    x='Total:Q',
-    y='Date:O',
-    tooltip=['Date:O', alt.Tooltip('Total:Q', format=',.0f')]
-)
-
-flow_layer = alt.layer(flow, flow_total, data=data).facet(column = 'moneyness:N', columns=2)
-
+# Define UI of streamlit app 
 
 col1, col2 = st.columns(2)
 
 with col1:
-    tab11, tab12, tab13 = st.tabs(["Aktive", "Zinsen", "Wechselkurse"])
+    tab11, tab12, tab13 = st.tabs(["Aktive  - Bilanz", "Zinsen", "Wechselkurse"])
    
     with tab11:
-        st.header('Aktive')
-        st.altair_chart(aktive + aktive_total, use_container_width=True)
+        with st.expander("Anleitung"):
+            st.write('Mithilfe von Shift \u21E7 können mehrer Zeitreihen gleichzeititg ausgewählt werden')        
+        st.markdown('''
+            **Aktive - Bilanz**  
+            Nationalbank | Monatsende | In Millionen Franken
+            ''')
+        st.altair_chart(Charts.balancesheet(data_a, sort_a, ['T0']), use_container_width=True)
 
     with tab12:
-        st.header('Zinsen')
+        st.header('Comming soon...')
 
     with tab13:
-        st.header('Wechselkurse') 
+        st.header('Comming soon...')
 
 with col2:
-    tab21, tab22 = st.tabs(["Passive", "Flow Proxy"])
+    tab21, tab22 = st.tabs(["Passive - Bilanz", "Passive - Flow Proxy"])
    
     with tab21:
-        st.header('Passive')
-        st.altair_chart(passive + passive_total, use_container_width=True)
+        with st.expander("Anleitung"):
+            st.write('Mithilfe von Shift \u21E7 können mehrer Zeitreihen gleichzeititg ausgewählt werden')
+        st.markdown('''
+            **Passive - Bilanz**  
+            Nationalbank | Monatsende | In Millionen Franken
+            ''')  
+        st.altair_chart(Charts.balancesheet(data_p, sort_p, ['T1'], orient='right', reverse=False, offset=21), use_container_width=True)
 
     with tab22:
-        st.header('Flow Proxy')
-        st.altair_chart(flow_layer, use_container_width=True)
+        with st.expander("Anleitung"):
+            st.write('Mithilfe von Shift \u21E7 können mehrer Zeitreihen gleichzeititg ausgewählt werden')
+        st.markdown('''
+            **Passive - Flow Proxy**  
+            Nationalbank | Veränderung seit Vormonatsende | In Millionen Franken
+            ''')          
+        st.altair_chart(Charts.flow(data_p, sort_p, orient='right', reverse=False, offset=21), use_container_width=True)
 
 st.dataframe(data)
